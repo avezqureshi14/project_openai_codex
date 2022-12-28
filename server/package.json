@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "server": "nodemon server"
   },
