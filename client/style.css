@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +7,38 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+.sdark{
+  border:1px solid #424242;
+}
+.dark{
+  box-shadow:0 17px 50px 0 rgba(11,20,26,.19),0 12px 15px 0 rgba(11,20,26,.24);
+  border:1px solid #424242;
+}
+
 body {
   background: #343541;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow-x: hidden;
+}
+
+.head_info{
+  text-align: center;
+}
+
+.info_chat{
+  background: #2d2e36;
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 17px;
+    color: #fff;
+    height: 96%;
+    width: 16rem;
 }
 
 #app {
-  width: 100vw;
   height: 100vh;
   background: #343541;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +50,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-
+  margin: 1rem 1rem 1rem -10rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -51,6 +74,28 @@ body {
 
 .ai {
   background: #40414F;
+  border-radius: 30px;
+}
+
+.info_chat button{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  margin: 1rem 0rem 0rem 0rem;
+  font-weight: 700;
+  color: #2d2e36;
+}
+
+
+.infoBox {
+  background: #40414F;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.infoBox h2{
+  color: navajowhite;
 }
 
 .chat {
@@ -67,7 +112,8 @@ body {
 .profile {
   width: 36px;
   height: 36px;
-  border-radius: 5px;
+  border-radius: 50%;
+  box-shadow:0 17px 50px 0 rgba(11,20,26,.19),0 12px 15px 0 rgba(11,20,26,.24);
 
   background: #5436DA;
 
@@ -88,7 +134,6 @@ body {
 
 .message {
   flex: 1;
-
   color: #dcdcdc;
   font-size: 20px;
 
@@ -112,16 +157,21 @@ body {
   display: none;
 }
 
+.askMeCodeTester{
+  display: none;
+}
+
 form {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
   background: #40414F;
-
+  margin: 0rem 0rem 1rem -10rem;
   display: flex;
   flex-direction: row;
   gap: 10px;
+  border-radius: 30px;
 }
 
 textarea {
@@ -147,4 +197,36 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+@media(max-width:1400px){
+  #chat_container{
+    margin: 1rem 1rem 1rem -1rem;
+  }
+  form{
+    margin:0rem 0rem 1rem -1rem;
+    width: 100vw;
+  }
+}
+
+@media(max-width:622px){
+  body{
+    display: flex;
+  }
+  .info_chat{
+    display: none;
+  }
+
+  #chat_container{
+    margin: 1rem 1rem 1rem 0rem;
+  }
+  form{
+    margin:0rem 0rem 1rem 0rem;
+    width: 100vw;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
 }

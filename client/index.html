@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codex - Your AI</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div id="chat_container"></div>
 
-      <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="Ask codex..."></textarea>
-        <button type="submit"><img src="assets/send.svg" alt="send" />
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>askMeCode - Open API | Avez Qureshi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="info_chat sdark">
+    <div class="head_info">
+     <h2 style="color: navajowhite;" >  askMeCode - OpenAI </h2>
     </div>
+    <div class="chat_info  dark infoBox">
+      <!-- <h4>This Chat is carried out between <img src="assets/user.svg" alt=""> and the  <img src="assets/bot.svg" alt=""></h4> -->
+      <h4 style="text-align: center; display: flex; justify-content: space-between; align-items: center; cursor: pointer;" ><i class='bx bx-home' ></i><b  style="margin-right:85px;"  > <a href="#" target="_blank" >Home</a> </b></h4>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <!-- <h4>This Chat is carried out between <img src="assets/user.svg" alt=""> and the  <img src="assets/bot.svg" alt=""></h4> -->
+      <h4 style="text-align: center; display: flex; justify-content: space-between; align-items: center; cursor: pointer;" ><i class='bx bxl-youtube'></i><b  style="margin-right:65px;"  ><a href="#" target="_blank" >Video Demo</a></b></h4>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <!-- <h4>This Chat is carried out between <img src="assets/user.svg" alt=""> and the  <img src="assets/bot.svg" alt=""></h4> -->
+      <h4 style="text-align: center; display: flex; justify-content: space-between; align-items: center; cursor: pointer;" ><i class='bx bx-link'></i><b  style="margin-right:55px;"  ><a href="https://avezqureshi.netlify.app/" target="_blank"  >  Developer Site</a></b></h4>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <h2>Confused ?</h2>
+      <h3>Try out this Examples ⬇️ </h3>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <h2>Example 1</h2>
+      <h3>Write Code for Mongo DB Connection ?  </h3>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <h2>Example 2</h2>
+      <h3>Write Code for Express Server ? </h3>
+    </div>
+    <div class="chat_info  dark infoBox">
+      <h2>Example 3</h2>
+      <h3>Type "Explain the code" and just after it paste the code you want to be expalined</h3>
+    </div>
+  </div>
+  <div id="app">
+      <div id="chat_container"></div>
+      <form class="dark" >
+        <textarea name="prompt" rows="1" cols="1" placeholder="askMeCode..."></textarea>
+        <button type="submit"><img src="assets/send.svg" alt="send" /></button>
+      </form>
+  </div>
 
-    <script type="module" src="script.js"></script>
-  </body>
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
